@@ -1,0 +1,72 @@
+services:
+  - type: web
+    name: careercraft-demo
+    runtime: node
+    plan: free
+    region: singapore
+    repo: https://github.com/your-org/careercraft
+    branch: main
+    buildCommand: npm ci --include=dev && npm --prefix src/game ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "24.22.1"
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: AI_PROVIDER
+        value: deepseek
+      - key: AI_MOCK
+        value: "0"
+      - key: INTEGRATION_TOKEN
+        generateValue: true
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: DEEPSEEK_MODEL
+        value: deepseek-flash
+      - key: VITE_GAME_PUBLIC
+        value: "1"
+      - key: VITE_MUSIC
+        value: "1"
+      - key: VITE_WHISPERS_COUNT
+        value: "30"
+  - type: web
+    name: careercraft-telegram
+    runtime: python
+    plan: free
+    region: singapore
+    repo: https://github.com/your-org/careercraft
+    branch: main
+    rootDir: src/chatbot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.9"
+      - key: CAREERCRAFT_API_URL
+        value: https://careercraft-demo.onrender.com
+      - key: INTEGRATION_TOKEN
+        fromService:
+          name: careercraft-demo
+          type: web
+          envVarKey: INTEGRATION_TOKEN
+      - key: AI_PROVIDER
+        value: deepseek
+      - key: DEEPSEEK_MODEL
+        value: deepseek-flash
+      - key: DEEPSEEK_API_KEY
+        fromService:
+          name: careercraft-demo
+          type: web
+          envVarKey: DEEPSEEK_API_KEY
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_WEBHOOK_SECRET
+        generateValue: true
+      - key: TELEGRAM_ALLOWED_USER_IDS
+        sync: false
+      - key: DIGEST_SCHEDULE_ENABLED
+        value: "false"

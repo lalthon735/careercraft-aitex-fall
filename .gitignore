@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pythonlibs/
+.ruff_cache/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Retired layout may still contain local saves and previous build outputs.
+/GamePlat/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.zip
+
+# Development reference libraries are kept outside the finished application.
+/skills/
+
+# Local player saves (progress and registered names). data/crawler holds public job adverts and may be committed.
+/data/game/
+# Official PDFs are large; their download links are in data/official-signals/raw/SOURCE.md
+/data/official-signals/raw/*.pdf
+
+# Hackathon research crawler and its outputs (kept out of the submission repository)
+/collect/
+
+# Local tooling and test scratch data
+/.local/
+/src/tools/bin/*.exe
+
+# Claude Code personal settings
+.claude/settings.local.json
+/data/reference/*/raw/
+.vercel
+.env*
+!.env.example
+!**/.env.example
+
+# Vendored Vercel Python runtime deps (installed, not source)
+/.vercel_python_packages/
+
+# Large source videos stay local. The demo video IS kept.
+/*.mp4
+!/CareerCraft_demo.mp4
+
+# Large reference/evidence blobs removed from the repo (kept out intentionally)
+/docs/reference/analysis/rea-app-evidence.json
+/src/game/resources/references-inspiration.pur

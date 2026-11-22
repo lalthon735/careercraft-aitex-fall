@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm --prefix src/game ci && npm --prefix src/game run build",
+  "outputDirectory": "src/game/dist",
+  "framework": null,
+  "functions": {
+    "api/[...path].js": {
+      "maxDuration": 60,
+      "includeFiles": "{data,src/data}/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/((?!api/|assets/|favicons/|social/|areas/|characters/|respawns/|behindTheScene/|intro/|ui/|style/).*)", "destination": "/index.html" }
+  ]
+}

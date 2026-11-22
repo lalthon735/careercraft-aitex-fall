@@ -1,0 +1,15 @@
+# Files Vercel must ignore when deploying CareerCraft.
+#
+# Vercel's CLI auto-detects "services" from Render manifests (render.yaml /
+# render.persistent.yaml), and those names conflict with the single
+# static-site + serverless-function setup declared in vercel.json. Keep them
+# out of the Vercel deployment; they stay in the repo for Render deploys.
+#
+# NOTE: do not exclude src/crawler, src/chatbot, etc. here — the Vite build
+# imports server/crawler-ingestion.js -> ../../crawler/src/sources/public.js
+# at build time, so excluding that source breaks the build.
+render.yaml
+render.persistent.yaml
+
+# Local-only Python virtualenv (never needed by the Vercel build).
+.venv
