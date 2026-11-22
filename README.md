@@ -10,6 +10,7 @@ An AI-assisted career exploration and learning platform that helps students unde
 
 - Entered in the **Open Innovation** track of AITEX Summit Fall 2026 (*From Prompt to Product*, 21–23 Nov 2026)
 - Play it in the browser: **https://careercraft-six.vercel.app**
+- Demo video: **https://vimeo.com/1249161786**
 
 > The live demo runs in mock-AI mode (`AI_MOCK=1`) with shared game saves on serverless Postgres. The reachability of a public URL does not prove 3D rendering, successful AI calls, or data durability.
 
