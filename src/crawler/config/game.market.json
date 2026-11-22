@@ -1,0 +1,871 @@
+{
+  "pipelineVersion": 4,
+  "platformRestricted": true,
+  "allowedPlatforms": [
+    "linkedin",
+    "indeed",
+    "ricebowl"
+  ],
+  "jsearchProvider": "rapidapi",
+  "timezone": "Asia/Kuala_Lumpur",
+  "country": "MY",
+  "datePosted": "month",
+  "maxPagesPerQuery": 1,
+  "maxRequestsPerRun": 150,
+  "requestIntervalMs": 1000,
+  "jsearchRequestIntervalMs": 2500,
+  "maxSourceConcurrency": 3,
+  "maxRunMs": 600000,
+  "maxRecordsPerRun": 1000,
+  "maxDetailsPerSource": 28,
+  "roles": [
+    {
+      "id": "data-analyst",
+      "name": "Data Analyst",
+      "titlePatterns": [
+        "\\b(data|business intelligence|bi|reporting|insights?) analysts?\\b"
+      ],
+      "queries": [
+        "Data Analyst jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "frontend-developer",
+      "name": "Frontend Developer",
+      "titlePatterns": [
+        "\\bfront[ -]?end\\b|\\breact (developer|engineer)\\b"
+      ],
+      "queries": [
+        "Frontend Developer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "backend-developer",
+      "name": "Backend Developer",
+      "titlePatterns": [
+        "\\bback[ -]?end\\b|\\b(java|node\\.?js|python|api|server[ -]side) (developer|engineer)\\b"
+      ],
+      "queries": [
+        "Backend Developer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "ui-ux-designer",
+      "name": "UI/UX Designer",
+      "titlePatterns": [
+        "\\b(ui|ux|user experience|user interface|product|interaction) designer\\b|\\bui[ /-]+ux\\b"
+      ],
+      "queries": [
+        "UI UX designer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "ml-engineer",
+      "name": "AI / ML Engineer",
+      "titlePatterns": [
+        "\\b(machine learning|mlops|ml|ai|artificial intelligence|deep learning|llm) (engineer|developer|specialist)\\b"
+      ],
+      "queries": [
+        "machine learning engineer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "product-manager",
+      "name": "Product Manager",
+      "titlePatterns": [
+        "\\bproduct (manager|owner|lead)\\b"
+      ],
+      "queries": [
+        "Product Manager jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "forward-deployed-engineer",
+      "name": "FDE (Forward Deployed Engineer)",
+      "titlePatterns": [
+        "\\bforward[ -]+deploy(?:ed|ment)[ -]+(?:(?:software|ai|genai)[ -]+)?engineer(?:ing)?\\b"
+      ],
+      "queries": [
+        "forward deployed engineer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "data-scientist",
+      "name": "Data Scientist",
+      "titlePatterns": [
+        "\\b(data|applied) scientist\\b"
+      ],
+      "queries": [
+        "Data Scientist jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "auditor",
+      "name": "Auditor",
+      "titlePatterns": [
+        "\\bauditor\\b|\\baudit (associate|executive|manager|senior)\\b"
+      ],
+      "queries": [
+        "Auditor jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "lawyer",
+      "name": "Lawyer",
+      "titlePatterns": [
+        "\\b(lawyer|legal counsel|legal associate|advocate|solicitor)\\b"
+      ],
+      "queries": [
+        "Lawyer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "teacher",
+      "name": "Teacher",
+      "titlePatterns": [
+        "\\b(teacher|lecturer|educator)\\b"
+      ],
+      "queries": [
+        "Teacher jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "doctor",
+      "name": "Doctor",
+      "titlePatterns": [
+        "\\b(medical officer|medical doctor|physician|general practitioner)\\b"
+      ],
+      "queries": [
+        "medical officer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "chef",
+      "name": "Chef",
+      "titlePatterns": [
+        "\\bchef\\b"
+      ],
+      "queries": [
+        "Chef jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "civil-engineer",
+      "name": "Civil Engineer",
+      "titlePatterns": [
+        "\\b(civil|structural) engineer\\b"
+      ],
+      "queries": [
+        "Civil Engineer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "accountant",
+      "name": "Accountant",
+      "titlePatterns": [
+        "\\b(accountants?|accounting (executive|officer|assistant|clerk|manager|supervisor|analyst)|accounts (executive|officer|assistant|clerk|manager|supervisor|payable|receivable)|account (assistant|clerk|officer)|finance (executive|officer|assistant|analyst)|bookkeepers?)\\b"
+      ],
+      "queries": [
+        "accountant jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "software-engineer",
+      "name": "Software Engineer",
+      "titlePatterns": [
+        "\\b(software (engineer|developer)s?|(full[ -]?stack|web|mobile|android|ios|\\.net|php|application) (developer|engineer)s?|programmers?)\\b"
+      ],
+      "queries": [
+        "software engineer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "electrical-engineer",
+      "name": "Electrical & Electronics Engineer",
+      "titlePatterns": [
+        "\\b(electrical|electronics?|e&e|power|instrumentation|c&i|control (and|&) instrumentation|automation|plc|hardware|embedded|firmware)( (and|&) (electronics?|instrumentation))?( design)? engineers?\\b|\\bchargem[ae]n\\b"
+      ],
+      "queries": [
+        "electrical engineer jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "digital-marketer",
+      "name": "Digital Marketing Executive",
+      "titlePatterns": [
+        "\\b(digital|social media|online|performance|content|e-?commerce|search engine) marketing\\b|\\bsocial media (executive|specialist|manager|officer|coordinator|strategist)\\b|\\bseo (executive|specialist|manager|analyst)\\b|\\bdigital marketers?\\b"
+      ],
+      "queries": [
+        "digital marketing executive jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "quantity-surveyor",
+      "name": "Quantity Surveyor",
+      "titlePatterns": [
+        "\\bquantity surveyors?\\b|\\bqs (executive|engineer|manager|assistant)\\b|^qs\\b"
+      ],
+      "queries": [
+        "quantity surveyor jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "hr-executive",
+      "name": "Human Resources Executive",
+      "titlePatterns": [
+        "\\b(human resources?|hr|talent acquisition|recruitment|payroll|people) (executive|officer|assistant|specialist|generalist|manager|admin|administrator|business partner|coordinator|associate)\\b|\\b(recruiters?|hrbp|hr generalist)\\b"
+      ],
+      "queries": [
+        "human resources executive jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "sales-executive",
+      "name": "Sales & Business Development Executive",
+      "titlePatterns": [
+        "\\bsales (executive|representative|consultant|engineer|advisor|manager|coordinator|officer|specialist)s?\\b|\\bbusiness development (executive|manager|representative|officer)\\b"
+      ],
+      "queries": [
+        "sales executive jobs in Malaysia"
+      ]
+    },
+    {
+      "id": "customer-service",
+      "name": "Customer Service Executive",
+      "titlePatterns": [
+        "\\bcustomer (service|support|care|experience) (executive|officer|representative|associate|agent|specialist|assistant)s?\\b|\\bcall cent(er|re) (agent|executive|officer)\\b"
+      ],
+      "queries": [
+        "customer service executive jobs in Malaysia"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "sql",
+      "name": "SQL",
+      "aliases": [
+        "SQL"
+      ],
+      "pattern": "\\b(sql|mysql|postgres(ql)?|t-sql|pl\\/sql|mssql|sqlite|bigquery)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "excel",
+      "name": "Excel / Spreadsheets",
+      "aliases": [
+        "Excel / Spreadsheets"
+      ],
+      "pattern": "\\b(excel|spreadsheets?|google sheets|vlookup|pivot tables?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "aliases": [
+        "Statistics"
+      ],
+      "pattern": "\\b(statistics|statistical|regression|hypothesis testing|a\\/b test(ing|s)?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "aliases": [
+        "Python"
+      ],
+      "pattern": "\\b(python|pandas|numpy)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "data-cleaning",
+      "name": "Data cleaning",
+      "aliases": [
+        "Data cleaning"
+      ],
+      "pattern": "\\b(data clean(ing|sing)|data cleansing|data wrangling|data preparation|data quality|etl|elt|data validation)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "data-visualization",
+      "name": "Data visualization",
+      "aliases": [
+        "Data visualization"
+      ],
+      "pattern": "\\b(data visuali[sz]ation|power ?bi|tableau|looker|qlik|dashboards?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "aliases": [
+        "Communication"
+      ],
+      "pattern": "\\b(communication|stakeholders?|presentation skills?|storytelling)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "html-css",
+      "name": "HTML & CSS",
+      "aliases": [
+        "HTML & CSS"
+      ],
+      "pattern": "\\b(html5?|css3?|tailwind|sass|scss)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "aliases": [
+        "JavaScript"
+      ],
+      "pattern": "\\b(javascript|typescript|ecmascript)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "aliases": [
+        "React"
+      ],
+      "pattern": "\\bReact(\\.?js)?\\b|\\bNext\\.?js\\b",
+      "patternFlags": ""
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "aliases": [
+        "Git"
+      ],
+      "pattern": "\\b(git|github|gitlab|bitbucket|version control)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "accessibility",
+      "name": "Responsive & accessibility",
+      "aliases": [
+        "Responsive & accessibility"
+      ],
+      "pattern": "\\b(accessibility|wcag|a11y|responsive (web )?design)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "api-integration",
+      "name": "API integration",
+      "aliases": [
+        "API integration"
+      ],
+      "pattern": "\\b(api integrations?|third[- ]party apis?|integrat\\w* (with )?apis?|consum\\w* apis?|graphql)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "backend-language",
+      "name": "Backend language (Java / Node / Python)",
+      "aliases": [
+        "Backend language (Java / Node / Python)"
+      ],
+      "pattern": "\\b(java|node\\.?js|golang|php|ruby|django|flask|fastapi|spring boot|express\\.?js|nestjs|laravel|kotlin|\\.net)\\b|(^|[^\\w])c#(?=$|[^\\w])",
+      "patternFlags": "i"
+    },
+    {
+      "id": "databases",
+      "name": "Database design",
+      "aliases": [
+        "Database design"
+      ],
+      "pattern": "\\b(databases?|nosql|mongodb|redis|dynamodb|cassandra|data modell?ing|schema design)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "rest-api",
+      "name": "REST API design",
+      "aliases": [
+        "REST API design"
+      ],
+      "pattern": "\\b(rest(ful)? apis?|restful|rest services?|api design|microservices?|openapi|swagger)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "cloud-deploy",
+      "name": "Cloud deployment",
+      "aliases": [
+        "Cloud deployment"
+      ],
+      "pattern": "\\b(aws|amazon web services|azure|gcp|google cloud|docker|kubernetes|k8s|ci\\/cd|terraform)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "testing",
+      "name": "Automated testing",
+      "aliases": [
+        "Automated testing"
+      ],
+      "pattern": "\\b(unit test(s|ing)?|automated testing|test automation|jest|pytest|junit|cypress|selenium|playwright|tdd|integration tests?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "user-research",
+      "name": "User research",
+      "aliases": [
+        "User research"
+      ],
+      "pattern": "\\b(user research|user interviews?|ux research|personas?|customer research|user needs)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "prototyping",
+      "name": "Wireframes & prototyping",
+      "aliases": [
+        "Wireframes & prototyping"
+      ],
+      "pattern": "\\b(prototyp\\w*|wireframe\\w*|mock-?ups?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "aliases": [
+        "Figma"
+      ],
+      "pattern": "\\b(figma|adobe xd)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "visual-design",
+      "name": "Visual design",
+      "aliases": [
+        "Visual design"
+      ],
+      "pattern": "\\b(visual design|ui design|typography|colou?r theory|design systems?|graphic design|photoshop|illustrator)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "usability-testing",
+      "name": "Usability testing",
+      "aliases": [
+        "Usability testing"
+      ],
+      "pattern": "\\b(usability test\\w*|user testing|heuristic evaluation)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "ml-math",
+      "name": "Math for ML",
+      "aliases": [
+        "Math for ML"
+      ],
+      "pattern": "\\b(linear algebra|calculus|mathematics|mathematical (modell?ing|optimi[sz]ation)|probability theory|(convex|numerical) optimi[sz]ation)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "ml-frameworks",
+      "name": "ML frameworks",
+      "aliases": [
+        "ML frameworks"
+      ],
+      "pattern": "\\b(pytorch|tensorflow|keras|scikit-learn|sklearn|hugging ?face|xgboost|lightgbm|jax)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "mlops",
+      "name": "MLOps",
+      "aliases": [
+        "MLOps"
+      ],
+      "pattern": "\\b(mlops|model deployment|deploy\\w* (ml |machine learning )?models?|mlflow|kubeflow|sagemaker|vertex ai|model monitoring|model serving)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "roadmapping",
+      "name": "Product roadmapping",
+      "aliases": [
+        "Product roadmapping"
+      ],
+      "pattern": "\\b(roadmaps?|roadmapping|prioriti[sz]ation|product strategy|product vision|backlog)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "agile",
+      "name": "Agile collaboration",
+      "aliases": [
+        "Agile collaboration"
+      ],
+      "pattern": "\\b(agile|scrum|kanban|sprints?|jira)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "market-analysis",
+      "name": "Market analysis",
+      "aliases": [
+        "Market analysis"
+      ],
+      "pattern": "\\b(market (research|analysis)|competitive analysis|competitor analysis|market trends?|go-to-market|customer insights?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "accounting",
+      "name": "Financial accounting",
+      "aliases": [
+        "Financial accounting"
+      ],
+      "pattern": "\\b(accounting|bookkeeping|mfrs|ifrs|gaap|financial statements?|general ledger|acca|cpa)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "auditing",
+      "name": "Audit procedures & standards",
+      "aliases": [
+        "Audit procedures & standards"
+      ],
+      "pattern": "\\b(audit(s|ing|or)?|(?<!quality )assurance|isa standards?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "internal-control",
+      "name": "Internal control & risk",
+      "aliases": [
+        "Internal control & risk"
+      ],
+      "pattern": "\\b(internal controls?|risk assessment|sox|compliance testing|risk management)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "legal-research",
+      "name": "Legal research",
+      "aliases": [
+        "Legal research"
+      ],
+      "pattern": "\\b(legal research|case law|statutes?|westlaw|lexis)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "legal-writing",
+      "name": "Legal drafting",
+      "aliases": [
+        "Legal drafting"
+      ],
+      "pattern": "\\b(legal (drafting|writing)|draft(ing)? (contracts?|agreements?)|pleadings?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "negotiation",
+      "name": "Negotiation",
+      "aliases": [
+        "Negotiation"
+      ],
+      "pattern": "\\b(negotiat\\w+)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "lesson-planning",
+      "name": "Lesson planning",
+      "aliases": [
+        "Lesson planning"
+      ],
+      "pattern": "\\b(lesson plans?|lesson planning|curriculum (design|development)|syllabus)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "classroom-management",
+      "name": "Classroom management",
+      "aliases": [
+        "Classroom management"
+      ],
+      "pattern": "\\b(classroom management|classroom routines?|behaviou?r management)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "assessment",
+      "name": "Learning assessment",
+      "aliases": [
+        "Learning assessment"
+      ],
+      "pattern": "\\b(student assessments?|formative assessments?|grading|rubrics?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "clinical-knowledge",
+      "name": "Clinical knowledge",
+      "aliases": [
+        "Clinical knowledge"
+      ],
+      "pattern": "\\b(clinical|mbbs|medical degree|(patient|differential) diagnos\\w+|diagnos\\w+ (and|&) treat\\w*)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "patient-care",
+      "name": "Patient care",
+      "aliases": [
+        "Patient care"
+      ],
+      "pattern": "\\b(patient care|patient management|bedside manner)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "medical-ethics",
+      "name": "Medical ethics",
+      "aliases": [
+        "Medical ethics"
+      ],
+      "pattern": "\\b(medical ethics|informed consent|patient confidentiality)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "cooking-technique",
+      "name": "Cooking technique",
+      "aliases": [
+        "Cooking technique"
+      ],
+      "pattern": "\\b(culinary|cooking|knife skills|kitchen techniques?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "food-safety",
+      "name": "Food safety & hygiene",
+      "aliases": [
+        "Food safety & hygiene"
+      ],
+      "pattern": "\\b(food (safety|hygiene|handling)|haccp|sanitation)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "menu-planning",
+      "name": "Menu planning & costing",
+      "aliases": [
+        "Menu planning & costing"
+      ],
+      "pattern": "\\b(menu (planning|development|design)|food cost(ing)?|recipe costing)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "engineering-math",
+      "name": "Engineering math & mechanics",
+      "aliases": [
+        "Engineering math & mechanics"
+      ],
+      "pattern": "\\b(structural (analysis|design)|engineering mechanics|load calculations?|finite element)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "cad",
+      "name": "CAD drafting",
+      "aliases": [
+        "CAD drafting"
+      ],
+      "pattern": "\\b(autocad|cad|revit|civil 3d|solidworks)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "project-management",
+      "name": "Project management",
+      "aliases": [
+        "Project management"
+      ],
+      "pattern": "\\b(project management|pmp|project planning|project schedul\\w+|prince2)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "accounting-software",
+      "name": "Accounting software",
+      "aliases": [
+        "Accounting software"
+      ],
+      "pattern": "\\b(accounting (software|system)s?|sql account(ing)?|autocount|xero|quickbooks|myob|sage ?(300|ubs)?|sap (fi|b1|business one)|ubs accounting)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "accounts-payable-receivable",
+      "name": "Accounts payable & receivable",
+      "aliases": [
+        "Accounts payable & receivable"
+      ],
+      "pattern": "\\b(accounts? payables?|accounts? receivables?|ap\\/ar|bank reconciliations?|reconciliations?|invoic(e|es|ing)|credit control|debt collection)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "taxation",
+      "name": "Malaysian taxation",
+      "aliases": [
+        "Malaysian taxation"
+      ],
+      "pattern": "\\b(tax(ation)?|sst|lhdn|e-?invoic\\w*|income tax|tax computation|transfer pricing)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "electrical-systems",
+      "name": "Electrical systems",
+      "aliases": [
+        "Electrical systems"
+      ],
+      "pattern": "\\b(electrical (systems?|installations?|design|wiring|drawings?)|power distribution|switchgears?|high voltage|low voltage|lv\\/hv|transformers?|single line diagrams?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "equipment-maintenance",
+      "name": "Equipment maintenance",
+      "aliases": [
+        "Equipment maintenance"
+      ],
+      "pattern": "\\b(preventive maintenance|corrective maintenance|predictive maintenance|breakdown maintenance|maintenance (schedul\\w+|of (equipment|machines?|facilit\\w+))|equipment (maintenance|breakdowns?))\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "plc-automation",
+      "name": "PLC & automation",
+      "aliases": [
+        "PLC & automation"
+      ],
+      "pattern": "\\b(plc|scada|hmi|automation systems?|industrial automation|control systems?|instrumentation)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "social-media-marketing",
+      "name": "Social media marketing",
+      "aliases": [
+        "Social media marketing"
+      ],
+      "pattern": "\\b(social media|facebook|instagram|tiktok|xiaohongshu|community management|influencers?|kols?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "digital-advertising",
+      "name": "Digital advertising",
+      "aliases": [
+        "Digital advertising"
+      ],
+      "pattern": "\\b(google ads|facebook ads|meta ads|paid (ads|media|social)|ppc|sem|performance marketing|ad campaigns?|media buying)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "web-analytics",
+      "name": "Web & marketing analytics",
+      "aliases": [
+        "Web & marketing analytics"
+      ],
+      "pattern": "\\b(google analytics|ga4|web analytics|analytics tools?|search console|conversion rates?|kpis? (tracking|reporting)|seo)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "content-writing",
+      "name": "Content & copywriting",
+      "aliases": [
+        "Content & copywriting"
+      ],
+      "pattern": "\\b(copywriting|content (creation|writing|planning|strategy)|copywriter|write (engaging )?content|blog posts?|captions?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "quantity-surveying",
+      "name": "Quantity measurement",
+      "aliases": [
+        "Quantity measurement"
+      ],
+      "pattern": "\\b(quantity surveying|bills? of quantit\\w+|bq|boq|taking[- ]off|measurement of (works|quantities)|interim (claims|valuations?)|final accounts?|variation orders?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "cost-estimation",
+      "name": "Cost estimation & control",
+      "aliases": [
+        "Cost estimation & control"
+      ],
+      "pattern": "\\b(cost (estimat\\w+|control|plans?|planning|management)|estimat(e|es|ing) (costs?|quantities)|budget (control|estimat\\w+)|value engineering|tender (pricing|estimat\\w+))\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "contract-administration",
+      "name": "Contracts & tendering",
+      "aliases": [
+        "Contracts & tendering"
+      ],
+      "pattern": "\\b(contract (administration|management|documents?)|tender(s|ing)?|procurement|sub-?contract\\w*|pam contract|cidb|conditions of contract)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "employee-relations",
+      "name": "Employee relations & labour law",
+      "aliases": [
+        "Employee relations & labour law"
+      ],
+      "pattern": "\\b(employee relations?|industrial relations?|employee engagement|grievances?|disciplinary|domestic inquiry|employment act|labou?r law)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "recruitment",
+      "name": "Recruitment",
+      "aliases": [
+        "Recruitment"
+      ],
+      "pattern": "\\b(recruitment|talent acquisition|recruiting|hiring process|interview (scheduling|coordination)|sourcing candidates?|(employee|new hire|staff) onboarding)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "payroll",
+      "name": "Payroll & statutory contributions",
+      "aliases": [
+        "Payroll & statutory contributions"
+      ],
+      "pattern": "\\b(payroll|salary (processing|computation)|(epf|socso|eis|pcb|kwsp|perkeso)[ ,/&a-z]{0,25}(submission|contribution|filing|payment)s?)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "sales-prospecting",
+      "name": "Prospecting & selling",
+      "aliases": [
+        "Prospecting & selling"
+      ],
+      "pattern": "\\b(prospect\\w*|lead generation|generate leads|cold call\\w*|new business|business development|sales (targets?|pipeline|funnel)|closing (deals|sales))\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "customer-support",
+      "name": "Customer support",
+      "aliases": [
+        "Customer support"
+      ],
+      "pattern": "\\b(customer (service|support|care|inquir\\w+|enquir\\w+|complaints?|satisfaction)|after[- ]sales|handle (complaints|enquiries|inquiries)|helpdesk)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "crm-systems",
+      "name": "CRM systems",
+      "aliases": [
+        "CRM systems"
+      ],
+      "pattern": "\\b(crm|salesforce|hubspot|zoho|customer relationship management)\\b",
+      "patternFlags": "i"
+    },
+    {
+      "id": "workplace-languages",
+      "name": "Workplace languages (Malay / Mandarin)",
+      "aliases": [
+        "Workplace languages (Malay / Mandarin)"
+      ],
+      "pattern": "\\b(mandarin|chinese speak\\w*|cantonese|bahasa (malaysia|melayu)|malay (language|speak\\w*)|bilingual|multilingual)\\b",
+      "patternFlags": "i"
+    }
+  ],
+  "sources": [
+    {
+      "id": "linkedin",
+      "type": "public",
+      "transport": "jsearch",
+      "enabled": true,
+      "optional": true
+    },
+    {
+      "id": "indeed",
+      "type": "public",
+      "transport": "jsearch",
+      "enabled": true,
+      "optional": true
+    },
+    {
+      "id": "ricebowl",
+      "type": "public",
+      "transport": "browser",
+      "enabled": true,
+      "optional": true
+    }
+  ]
+}

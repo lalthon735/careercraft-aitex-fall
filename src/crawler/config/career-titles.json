@@ -1,0 +1,41 @@
+{
+  "about": "Reviewed job title rules (regular expressions, case-insensitive) and search words per career. Shared by the crawler (src/crawler/src/game-config.js) and the reference imports (src/data/scripts).",
+  "titles": {
+    "data-analyst": "\\b(data|business intelligence|bi|reporting|insights?) analysts?\\b",
+    "frontend-developer": "\\bfront[ -]?end\\b|\\breact (developer|engineer)\\b",
+    "backend-developer": "\\bback[ -]?end\\b|\\b(java|node\\.?js|python|api|server[ -]side) (developer|engineer)\\b",
+    "ui-ux-designer": "\\b(ui|ux|user experience|user interface|product|interaction) designer\\b|\\bui[ /-]+ux\\b",
+    "ml-engineer": "\\b(machine learning|mlops|ml|ai|artificial intelligence|deep learning|llm) (engineer|developer|specialist)\\b",
+    "product-manager": "\\bproduct (manager|owner|lead)\\b",
+    "forward-deployed-engineer": "\\bforward[ -]+deploy(?:ed|ment)[ -]+(?:(?:software|ai|genai)[ -]+)?engineer(?:ing)?\\b",
+    "data-scientist": "\\b(data|applied) scientist\\b",
+    "auditor": "\\bauditor\\b|\\baudit (associate|executive|manager|senior)\\b",
+    "lawyer": "\\b(lawyer|legal counsel|legal associate|advocate|solicitor)\\b",
+    "teacher": "\\b(teacher|lecturer|educator)\\b",
+    "doctor": "\\b(medical officer|medical doctor|physician|general practitioner)\\b",
+    "chef": "\\bchef\\b",
+    "civil-engineer": "\\b(civil|structural) engineer\\b",
+    "accountant": "\\b(accountants?|accounting (executive|officer|assistant|clerk|manager|supervisor|analyst)|accounts (executive|officer|assistant|clerk|manager|supervisor|payable|receivable)|account (assistant|clerk|officer)|finance (executive|officer|assistant|analyst)|bookkeepers?)\\b",
+    "software-engineer": "\\b(software (engineer|developer)s?|(full[ -]?stack|web|mobile|android|ios|\\.net|php|application) (developer|engineer)s?|programmers?)\\b",
+    "electrical-engineer": "\\b(electrical|electronics?|e&e|power|instrumentation|c&i|control (and|&) instrumentation|automation|plc|hardware|embedded|firmware)( (and|&) (electronics?|instrumentation))?( design)? engineers?\\b|\\bchargem[ae]n\\b",
+    "digital-marketer": "\\b(digital|social media|online|performance|content|e-?commerce|search engine) marketing\\b|\\bsocial media (executive|specialist|manager|officer|coordinator|strategist)\\b|\\bseo (executive|specialist|manager|analyst)\\b|\\bdigital marketers?\\b",
+    "quantity-surveyor": "\\bquantity surveyors?\\b|\\bqs (executive|engineer|manager|assistant)\\b|^qs\\b",
+    "hr-executive": "\\b(human resources?|hr|talent acquisition|recruitment|payroll|people) (executive|officer|assistant|specialist|generalist|manager|admin|administrator|business partner|coordinator|associate)\\b|\\b(recruiters?|hrbp|hr generalist)\\b",
+    "sales-executive": "\\bsales (executive|representative|consultant|engineer|advisor|manager|coordinator|officer|specialist)s?\\b|\\bbusiness development (executive|manager|representative|officer)\\b",
+    "customer-service": "\\bcustomer (service|support|care|experience) (executive|officer|representative|associate|agent|specialist|assistant)s?\\b|\\bcall cent(er|re) (agent|executive|officer)\\b"
+  },
+  "queries": {
+    "ml-engineer": "machine learning engineer",
+    "forward-deployed-engineer": "forward deployed engineer",
+    "ui-ux-designer": "UI UX designer",
+    "doctor": "medical officer",
+    "accountant": "accountant",
+    "software-engineer": "software engineer",
+    "electrical-engineer": "electrical engineer",
+    "digital-marketer": "digital marketing executive",
+    "quantity-surveyor": "quantity surveyor",
+    "hr-executive": "human resources executive",
+    "sales-executive": "sales executive",
+    "customer-service": "customer service executive"
+  }
+}
